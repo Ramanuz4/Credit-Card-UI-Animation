@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Poppins;
+  color: white;
+}
+
+main {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url(Assets/img.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
+}
+
+.container {
+  height: 320px;
+  width: 575px;
+  transition: 0.6s;
+  transform-style: preserve-3d;
+}
+
+.container:hover {
+  transform: rotateY(180deg);
+}
+
+.card {
+  position: absolute;
+  height: 330px;
+  width: 550px;
+  border-radius: 25px;
+  background-image: url(Assets/bg.png);
+  background-size: cover;
+  box-shadow: 0 25px 45px rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  backface-visibility: hidden;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 78px;
+  margin: 20px;
+}
+
+.logo h5 {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.chip img {
+  width: 90px;
+  margin: 20px;
+}
+
+.card-details {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin-left: 25px;
+  margin-top: 50px;
+}
+
+.valid-date {
+  margin-top: 90px;
+  font-size: 1.3rem;
+}
+
+.name-number h5 {
+  margin-bottom: 60px;
+  letter-spacing: 2px;
+  font-size: 1.2rem;
+}
+
+.name-number h6 {
+  font-size: 1rem;
+}
+
+.name-number p {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.back-face {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: rotateY(180deg);
+}
+
+.customer {
+  margin: 30px;
+  font-size: 0.8rem;
+}
+
+.magnetic-strip {
+  height: 40px;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+}
+
+.code {
+  display: flex;
+}
+
+.signature {
+  height: 30px;
+  width: 450px;
+  background-color: aliceblue;
+  margin-right: 10px;
+}
+
+.code i {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.lorem {
+  margin-top: 60px;
+  margin-left: 15px;
+}
